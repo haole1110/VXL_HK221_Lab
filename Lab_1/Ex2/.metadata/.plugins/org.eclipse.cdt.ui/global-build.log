@@ -1,0 +1,20 @@
+01:11:38 **** Incremental Build of configuration Debug for project 3led-red ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "3led-red.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Admin\Desktop\Lab VXL\Lab 1\Ex3\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="3led-red.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 3led-red.elf
+ 
+arm-none-eabi-size   3led-red.elf 
+arm-none-eabi-objdump -h -S  3led-red.elf  > "3led-red.list"
+arm-none-eabi-objcopy  -O ihex  3led-red.elf  "3led-red.hex"
+arm-none-eabi-objcopy  -O binary  3led-red.elf  "3led-red.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4664	     20	   1572	   6256	   1870	3led-red.elf
+Finished building: default.size.stdout
+ 
+Finished building: 3led-red.hex
+Finished building: 3led-red.bin
+Finished building: 3led-red.list
+ 
+ 
+ 
