@@ -1,0 +1,12 @@
+main.c:60:6:ledREDtest	8	static
+main.c:63:6:ledYELLOWtest	8	static
+main.c:66:6:ledGREENtest	8	static
+main.c:69:6:ledPINKtest	8	static
+main.c:72:6:ledORANGEtest	8	static
+main.c:75:6:ledBLUEtest	8	static
+main.c:84:5:main	8	static
+main.c:135:6:SystemClock_Config	72	static
+main.c:171:13:MX_TIM2_Init	32	static
+main.c:216:13:MX_GPIO_Init	32	static
+main.c:245:6:HAL_TIM_PeriodElapsedCallback	16	static
+main.c:254:6:Error_Handler	4	static,ignoring_inline_asm
